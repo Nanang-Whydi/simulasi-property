@@ -12,26 +12,26 @@ const defaultImage = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMA
 
 const ukuran = {
   "30/60": {
-    image: "https://media-id-live.propertypro.co.id/bm9uZS9ub25l/1080x650/4860f2397a94a9.jpg",
+    image: "https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/238/2024/12/01/Screenshot_2024-12-01-10-42-59-515_comandroidchrome-edit-2040561363.jpg",
     price: "170000000",
   },
   "40/72": {
-    image: "https://i.pinimg.com/originals/af/71/76/af71760108ababf53abe07ec25a2014b.png",
+    image: "https://cpanel-blog.smsperkasa.com/wp-content/uploads/2024/09/contoh-desain-rumah-dikampung-sederhana-1024x1024.png",
     price: "200000000",
   },
   "45/85": {
-    image: "https://d3p0bla3numw14.cloudfront.net/news-content/img/2020/09/17200410/harga-rumah-tipe-45.jpg",
+    image: "https://static.promediateknologi.id/crop/52x229:1024x1611/0x0/webp/photo/p3/102/2024/11/17/Screenshot_20241117_073545_Pinterest-577433405.jpg",
     price: "250000000",
   },
 };
 
 const pondasi = {
   "batu kali": {
-    image: "https://gocement.com/blog/wp-content/uploads/2023/08/photo-1494861895304-fb272971c078.jpeg",
+    image: "https://e-katalog.lkpp.go.id/katalog/produk/download/gambar/949428615?file_name=22151680351967472.jpg&v=3&file_sub_location=produk_gambar%2F2023%2F03%2F28",
     price: "4000000",
   },
   beton: {
-    image: "https://housingestate.id/wp-content/uploads/2015/10/beton-precast.jpg",
+    image: "https://gratisongkir-storage.com/products/900x900/D98auq7oOMEy.jpg",
     price: "8000000",
   },
 };
@@ -53,7 +53,7 @@ const dinding = {
 
 const lantai = {
   keramik: {
-    image: "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/102/MTA-156049715/habitat_keramik_lantai_habitat_60x60_venato_-_motif_marble_carara_full01_kt0coew3.jpg",
+    image: "https://down-id.img.susercontent.com/file/id-11134207-7r98u-lwc7bl3chiy614",
     price: "5000000",
   },
   granit: {
@@ -75,7 +75,7 @@ const kasoreng = {
 
 const genteng = {
   "metal roof": {
-    image: "https://static.homeguide.com/assets/images/content/homeguide-metal-roofing-repair-replacing-screws-resealing-seams.jpg",
+    image: "https://s.alicdn.com/@sc04/kf/Hd6ec59a9c56d424bbd625c5e38485a4ef.jpg_300x300.jpg",
     price: "5000000",
   },
   spandek: {
@@ -91,7 +91,7 @@ const genteng = {
     price: "8000000",
   },
   "genteng keramik": {
-    image: "https://filebroker-cdn.lazada.co.id/kf/S4b124e0b35e84a36a4c08d70df63f1d3G.jpg",
+    image: "https://images.tokopedia.net/img/cache/700/product-1/2020/7/24/7583801/7583801_da59716a-722d-4965-ad1e-e577bcc21ccb_780_780.jpg",
     price: "6000000",
   },
 };
@@ -102,7 +102,7 @@ const plafon = {
     price: "16000000",
   },
   GRC: {
-    image: "https://awsimages.detik.net.id/community/media/visual/2023/08/17/plafon-rumah-1_169.jpeg",
+    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRi6dUAln1eobz5n5cI8iEdTe7pmeHjJcdx0KcPbM84flLLavKbTq0kcf_NfcZxAo4Iw2L6I07pz0hwzNa_W5lCulONvETSDpDgTMf2bVgYrYJfF3ONwIcvz84sI--p-vJ6EPJR_bQ5t_fa7_OkYQ72P5IlZA52sR8dhZcghCotNBe_DRNEh0_N9by9Kw/s720/jual%20pasang%20plafon%20GRC%2010.webp",
     price: "9000000",
   },
   gipsum: {
