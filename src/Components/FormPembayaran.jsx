@@ -46,7 +46,10 @@ const FormPembayaran = () => {
 
     if (tenor > 0) {
       const installment = (totalPrice - dp) / tenor;
-      return installment.toLocaleString(); // Mengembalikan nilai angsuran dengan dua desimal
+      return installment.toLocaleString('en-US', {
+          minimumFractionDigits: 0,
+          maximumFractionDigits: 0
+      });
     }
     return 0;
   };
@@ -57,7 +60,10 @@ const FormPembayaran = () => {
 
     if (tenor > 0) {
       const installment = (totalafterpajak - dp) / tenor;
-      return installment.toLocaleString(); // Mengembalikan nilai angsuran dengan dua desimal
+      return installment.toLocaleString('en-US', {
+          minimumFractionDigits: 0,
+          maximumFractionDigits: 0
+      });
     }
     return 0;
   };
