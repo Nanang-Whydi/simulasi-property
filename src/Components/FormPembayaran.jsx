@@ -9,7 +9,6 @@ const FormPembayaran = () => {
   const navigate = useNavigate();
   const totalPrice = location.state?.totalPrice;
   const taxRate = 0.12; // Pajak 12%
-  const totalafterpajak = totalPrice * (1 + taxRate);
 
   const [selectedCategoryBayar, setSelectedCategoryBayar] = useState("");
   const [buyerInfo, setBuyerInfo] = useState({
@@ -45,10 +44,10 @@ const FormPembayaran = () => {
     const tenor = parseInt(buyerInfo.tenor) || 0; // Mengambil tenor
 
     if (tenor > 0) {
-      const installment = (totalPrice - dp) / tenor;
-      return installment.toLocaleString('en-US', {
-          minimumFractionDigits: 0,
-          maximumFractionDigits: 0
+      const installment = (totalPrice - dp) / tenor; // Cicilan tanpa pajak
+      return installment.toLocaleString("en-US", {
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0,
       });
     }
     return 0;
@@ -59,10 +58,12 @@ const FormPembayaran = () => {
     const tenor = parseInt(buyerInfo.tenor) || 0; // Mengambil tenor
 
     if (tenor > 0) {
-      const installment = (totalafterpajak - dp) / tenor;
-      return installment.toLocaleString('en-US', {
-          minimumFractionDigits: 0,
-          maximumFractionDigits: 0
+      const installment = (totalPrice - dp) / tenor; // Cicilan tanpa pajak
+      const pajak = installment * taxRate; // Pajak 12% dari cicilan bulanan
+      const totalWithTax = installment + pajak; // Cicilan setelah pajak
+      return totalWithTax.toLocaleString("en-US", {
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0,
       });
     }
     return 0;
